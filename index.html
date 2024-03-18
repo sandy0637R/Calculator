@@ -9,25 +9,47 @@
 <body>
     <div class="one">
         <div class="two">
+            <h1 style="margin: 10px;color: black;
+                       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                       CALCULATOR
+           </h1>
+            <div class="screen" id="Screen">
+                 0
+            </div>
+
             <div class="three">
-                <h2 style="font-size: 3em;">Calculator</h1>
+                <div class="four" onclick="AllClear()">AC</div>
+                <div class="four"onclick="Backspace()">DE</div>
+                <div class="four"onclick="HandleOperators('.')">.</div>
+                <div class="four"  onclick="HandleOperators('/')">/</div>
             </div>
-            <div class="four">
-                <input type="text">
+            <div class="three">
+                <div class="four" onclick="HandleNumbers('7')">7</div>
+                <div class="four" onclick="HandleNumbers('8')">8</div>
+                <div class="four" onclick="HandleNumbers('9')">9</div>
+                <div class="four" onclick="HandleOperators('*')">*</div>
             </div>
-            <div class="five">
-                <h3>ADDITION</h3>
+            <div class="three">
+                <div class="four" onclick="HandleNumbers('4')">4</div>
+                <div class="four" onclick="HandleNumbers('5')">5</div>
+                <div class="four" onclick="HandleNumbers('6')">6</div>
+                <div class="four" onclick="HandleOperators('-')">-</div>
             </div>
-            <div class="six">
-                <h3>SUBSTRACTION</h3>
+            <div class="three">
+                <div class="four" onclick="HandleNumbers('1')">1</div>
+                <div class="four" onclick="HandleNumbers('2')">2</div>
+                <div class="four" onclick="HandleNumbers('3')">3</div>
+                <div class="four" onclick="HandleOperators('+')">+</div>
             </div>
-            <div class="seven">
-                <h3>MULTIPLICATION</h3>
-            </div>
-            <div class="eight">
-                <h3>DIVISION</h3>
+            <div class="three">
+                <div class="four" onclick="HandleOperators('%')">%</div>
+                <div class="four" onclick="HandleNumbers(0)">0</div>
+                <div class="four" style="width: 120px;" onclick="GetResult()">=</div>
             </div>
         </div>
     </div>
+
+
+    <script src="p.js"></script>
 </body>
 </html>
